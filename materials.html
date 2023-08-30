@@ -64,6 +64,36 @@
 			<img src="assets/img/load.gif">
 		</div>
 	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h3 class="modal-title" style="text-align: center">Hey Geeks!</h3>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <p style=" text-align: justify">CSE23.XYZ has been helping you by organizing materials, videos & whatnot, all in one place! The <b>domain</b> for the site is going to expire on <b>21/09/2023</b>. Please donate <b>₹2,398.00</b> to keep it running for the next one year. </p>
+	        <center>Collected till now</center>
+	        <div class="progress">
+	          <div class="progress-bar" role="progressbar" style="width: 1%;">₹18</div>
+	        </div>
+	      </div>
+	      <hr>
+	      <div style="text-align: center">
+	        <a href="https://docs.google.com/spreadsheets/d/14Yc06_pSpMrODvUKX68yIro9D9VHgEr4sQoSN2SiNMQ/edit?usp=sharing">
+	          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Contributors</button>
+	        </a>
+	        <a href="https://api.whatsapp.com/send?phone=917086358410&text=%F0%9F%99%8F">
+	          <button type="button" class="btn btn-primary">Contribute Now!</button>
+	        </a>
+	        <br>
+	        <br>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
 
 	<header class="header">
 		<div class="navbar-area sticky">
@@ -524,6 +554,10 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'G-P3GX2F6BSY');
+	</script>
+	<script>
+		var myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+		myModal.show();
 	</script>
 
 </body>
