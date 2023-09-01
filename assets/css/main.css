@@ -2,6 +2,7 @@
     01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -238,9 +239,11 @@ p {
   0% {
     transform: translateY(30px);
   }
+
   50% {
     transform: translateY(-30px);
   }
+
   100% {
     transform: translateY(30px);
   }
@@ -352,24 +355,31 @@ p {
   12.5% {
     transform: rotate(135deg);
   }
+
   25% {
     transform: rotate(270deg);
   }
+
   37.5% {
     transform: rotate(405deg);
   }
+
   50% {
     transform: rotate(540deg);
   }
+
   62.5% {
     transform: rotate(675deg);
   }
+
   75% {
     transform: rotate(810deg);
   }
+
   87.5% {
     transform: rotate(945deg);
   }
+
   to {
     transform: rotate(1080deg);
   }
@@ -379,9 +389,11 @@ p {
   0% {
     transform: rotate(130deg);
   }
+
   50% {
     transform: rotate(-5deg);
   }
+
   to {
     transform: rotate(130deg);
   }
@@ -391,9 +403,11 @@ p {
   0% {
     transform: rotate(-130deg);
   }
+
   50% {
     transform: rotate(5deg);
   }
+
   to {
     transform: rotate(-130deg);
   }
@@ -1324,28 +1338,36 @@ p {
   }
 }
 
-.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a.active {
   color: #fff;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
+
+  .navbar-nav .nav-item a:hover,
+  .navbar-nav .nav-item a.active {
     color: #286ADE;
   }
 }
 
 @media (max-width: 767px) {
-  .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
+
+  .navbar-nav .nav-item a:hover,
+  .navbar-nav .nav-item a.active {
     color: #286ADE;
   }
 }
 
-.navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::before {
+.navbar-nav .nav-item a:hover::before,
+.navbar-nav .nav-item a.active::before {
   height: 75px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::before {
+
+  .navbar-nav .nav-item a:hover::before,
+  .navbar-nav .nav-item a.active::before {
     top: 0;
     left: 0;
     width: 100%;
@@ -1354,7 +1376,9 @@ p {
 }
 
 @media (max-width: 767px) {
-  .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::before {
+
+  .navbar-nav .nav-item a:hover::before,
+  .navbar-nav .nav-item a.active::before {
     top: 0;
     left: 0;
     width: 100%;
@@ -1424,7 +1448,8 @@ p {
   color: #222;
 }
 
-.navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
+.navbar-nav .nav-item .sub-menu li a.active,
+.navbar-nav .nav-item .sub-menu li a:hover {
   padding-left: 25px;
   color: #286ADE;
 }
@@ -1658,7 +1683,8 @@ p {
   margin: 0 15px;
 }
 
-.about-section .about-content .counter-up .single-counter::before, .about-section .about-content .counter-up .single-counter::after {
+.about-section .about-content .counter-up .single-counter::before,
+.about-section .about-content .counter-up .single-counter::after {
   content: '';
   position: absolute;
   width: 2px;
@@ -1669,19 +1695,25 @@ p {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .about-section .about-content .counter-up .single-counter::before, .about-section .about-content .counter-up .single-counter::after {
+
+  .about-section .about-content .counter-up .single-counter::before,
+  .about-section .about-content .counter-up .single-counter::after {
     opacity: 0;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-section .about-content .counter-up .single-counter::before, .about-section .about-content .counter-up .single-counter::after {
+
+  .about-section .about-content .counter-up .single-counter::before,
+  .about-section .about-content .counter-up .single-counter::after {
     opacity: 0;
   }
 }
 
 @media (max-width: 767px) {
-  .about-section .about-content .counter-up .single-counter::before, .about-section .about-content .counter-up .single-counter::after {
+
+  .about-section .about-content .counter-up .single-counter::before,
+  .about-section .about-content .counter-up .single-counter::after {
     opacity: 0;
   }
 }
@@ -1910,4 +1942,40 @@ p {
 
 .footer .widget-wrapper .footer-widget .links li a:hover {
   padding-left: 10px;
+}
+
+
+.YT-subscribe {
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 12px 12px 12px 12px;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  max-width: 520px;
+  min-width: 280px;height: auto;
+  align-items: center;
+  color: #000000;
+  overflow: hidden;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.YT-subscribe .YT-subscribe-close {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+.YT-subscribe .YT-subscribe-close svg {
+  width: 26px;
+  height: 26px;
+  fill: #000;
+}
+
+
+.YT-btn-text {
+  margin-left: 9px
 }
